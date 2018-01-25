@@ -1,0 +1,31 @@
+<div class="wrapper-content container-fluid">
+  <p>You can download the resource files that you have translated by clicking the button below.</p>
+  <div class="row downloadRow">
+    <form ng-submit="downLoad(lisData)">
+      <div class="col-sm-6 col-xs-12">
+          <select  class="form-control" value="names" placeholder="select product name" ng-model="pname" ng-options="loc for loc in vm.names">               
+          </select>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+          <select  class="form-control" value="versions" placeholder="select product version" ng-model="pversion" ng-options="loc for loc in vm.versions">               
+            </select>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+          <select  class="form-control" value="languages" placeholder="select product language" ng-model="planguage" ng-options="loc for loc in vm.languages">               
+            </select>
+      </div>
+  </div>
+</form>
+  <div class="btn-group btn-download" role="group" aria-label="Alignment">
+    <button class="btn button-secondary btn-grouped btn-align active " grouped-selected type="button" ng-click="downLoad(listData)">Generate Translated Resource File</button>
+  </div>
+  <div class="display" ng-show="display">
+      <p>Please download translated resource files :</p>
+      <ul>
+          <li  ng-repeat="f in fileJson">
+            <a ng-href="result/{{f}}">{{f}}</a>
+          </li>
+        </ul>
+  </div>
+</div>
+

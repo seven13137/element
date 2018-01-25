@@ -1,0 +1,39 @@
+<div class="nav-menu-btn-container nav-menu-btn-container-dark nav-menu-btn-container-top-dark">
+    <a class="nav-menu-toggle-btn" minimize-menu animate="true" href="">
+        <i class="hpe-icon hpe-menu"></i>
+    </a>
+</div>
+
+<nav class="navbar-static-side-container navbar-static-side-container-light" ng-class="sidecontainer" scroll-config="{ autoReinitialise: false, showOnlyOnHover: true, enableKeyboardNavigation:true}" scroll-pane  id="menuScroll" role="navigation">
+    <div class="navbar-default navbar-static-side navbar-static-side-light" role="navigation">
+        <ul class="nav" side-navigation id="side-menu">
+           
+            <li ng-class="{ active: $state.includes('admin'), selected: $state.includes('admin')}">
+                <a href="">
+                    <i class="hpe-icon hpe-clone"></i>
+                    <span class="nav-label">Admin</span> <span class="hpe-icon hpe-collapse arrow"></span>
+                </a>
+                <ul ng-class="{ in:$state.includes('admin') }" class="nav nav-second-level">
+                    <li ng-class="{ active: $state.includes('admin.sync_resource')}"><a ui-sref="admin.sync_resource">Sync Resource</a>
+                    </li>
+                    <li ng-class="{ active: $state.includes('admin.guide_translation')}"><a ui-sref="admin.guide_translation">Guide Translation</a>
+                    </li>
+                    <li ng-class="{ active: $state.includes('admin.view_all')}"><a ui-sref="admin.view_all">View All</a>
+                    </li>
+                </ul>
+            </li>
+            <li ng-class="{ active: $state.includes('customer'),selected: $state.includes('customer')}">
+                <a href="">
+                    <i class="hpe-icon hpe-clone"></i>
+                    <span class="nav-label">Customer</span> <span class="hpe-icon hpe-collapse arrow"></span>
+                </a>
+                <ul ng-class="{ in:$state.includes('customer') }" class="nav nav-second-level">
+                    <li ng-class="{ active: $state.includes('customer.translate')}"><a ui-sref="customer.translate">Translate</a>
+                    </li>
+                    <li ng-class="{ active: $state.includes('customer.download')}"><a ui-sref="customer.download">Download Result</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

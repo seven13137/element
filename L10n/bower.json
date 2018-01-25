@@ -1,0 +1,14 @@
+{
+  "name": "elements-seed-project",
+  "description": "Elements Seed Project provides skeleton for using Elements.",
+  "version": "v3.4.0",
+  "keywords": [
+    "web"
+  ],
+  "homepage": "",
+  "main": [],
+  "devDependencies": {
+    "hp-elements-angular": "^3.4.0",
+    "angular": "~1.3.16"
+  }
+}

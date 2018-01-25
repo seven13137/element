@@ -1,0 +1,7 @@
+1.Copy the folder contents from directory ---'C:\workspace\elements\L10n\dist'--- to 
+directory ---'C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\olc'---
+
+2.Copy the folder 'bower_components' from directory  ---'C:\workspace\elements\L10n'---
+to directory  ---'C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps'---
+
+that's OK.

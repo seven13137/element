@@ -1,0 +1,13 @@
+<div class="affix-container" ng-controller="PageHeaderCtrl as vm">
+    <nav class="navbar navbar-static-top navbar-static-top-dark" 
+        affix-element>
+        <div class="navbar-header" ng-class="{'top-link-dropdown-2':vm.topSearchExpanded==false}">
+            <div class="product-styling" ng-show="!vm.topSearchExpanded">
+                <div class="logo-styling always-visible">
+                    <img src="img/mf_logo_white_small.png"></img>
+                </div>
+                <a  href="" class="sbtn"><i class="hpe-icon hpe-search hp-fw"></i></a><input type="search" class="search-input" placeholder="Select..."/>
+            </div>
+        </div>
+    </nav>
+</div>

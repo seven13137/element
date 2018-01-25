@@ -1,0 +1,50 @@
+
+
+
+<div class="wrapper-content container-fluid">
+  <span class="trans-head">All Translations :</span>
+  <div class="row">
+    <form ng-submit="downLoad(lisData)">
+        <div class="col-sm-6 col-xs-12">
+            <select  class="form-control" value="names" placeholder="select product name" ng-model="pname" ng-options="loc for loc in vm.names">               
+            </select>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <select  class="form-control" value="versions" placeholder="select product version" ng-model="pversion" ng-options="loc for loc in vm.versions">               
+            </select>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <select  class="form-control" value="languages" placeholder="select product language" ng-model="planguage" ng-options="loc for loc in vm.languages">               
+            </select>
+        </div>
+    </div>
+  <div class="trans-list">
+        <ul>
+            <li ng-repeat="item in items">
+                <div class="down-w">
+                    <div ng-class="{true:'triangle-down',false:'triangle-right',undefined:'triangle-right'}[item.active]" ng-click="toggle(item)"></div>
+                </div>
+                <div class="rightbox strTr">
+                    <span>String #{{$index + (vm.currentPage -1)*20 + 1 }} :</span>
+                    <div class="strTxt">
+                        {{item.en}}
+                    </div>
+                </div>
+                <div ng-class="{true:'ng-show',false:'ng-hide'}[item.active]" ng-show="item.active">
+                    <div class="rightbox sub_box" >
+                    <span>guide :</span>
+                        <div class="strTxt viewall">{{item.guide}}</div>
+                    </div>
+                    <div class="rightbox">
+                    <span>Translations :</span>
+                        <div class="strTxt viewall">
+                            {{item.local}}
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <pagination total-items="vm.totalItems" items-per-page="20" ng-model="vm.currentPage" num-pages="vm.numPages" ng-change="pageChanged()"></pagination>
+    <p>Page <span ng-bind="vm.currentPage"></span> of <span ng-bind="vm.numPages"></span></p>
+</div>

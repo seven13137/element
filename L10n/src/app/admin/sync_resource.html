@@ -1,0 +1,32 @@
+<div class="wrapper-content container-fluid">
+  <p>Please enter your product name,version number and github path in the input box below.</p>
+</br>
+<div class="input-tab">
+  <form ng-submit="inputUrl(formData)">
+      <div class="list">
+        <span class="listName">Product :</span>
+        <input type="text" name="name" ng-model="formData.name" />    
+      </div>
+      <div class="list">
+        <span class="listName">Version :</span>
+        <input type="text" name="version" ng-model="formData.version"/>   
+      </div>
+      <div class="list">
+        <span class="listName">Github Path :</span>
+        <input type="text"name="url" ng-model="formData.url"/>  
+      </div>
+      <div class="btn-group" role="group" aria-label="Alignment">
+        <button class="btn button-secondary btn-grouped btn-align active" grouped-selected type="submit" >Sync Resource File</button>
+      </div>
+  </form>
+  <div class="file-list" ng-class="{true:'ng-show',false:'ng-hide'}[showList]" ng-show="showList">
+    <p>Resource files synchronized :</p>
+    <ul>
+      <li  ng-repeat="f in fileJson">
+        {{f}}
+      </li>
+    </ul>
+  </div>
+</div>
+  
+</div>

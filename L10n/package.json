@@ -1,0 +1,43 @@
+{
+  "name": "element-seed-project",
+  "description": "Elements Seed Project provides skeleton for using Elements.",
+  "version": "1.4.0",
+  "keywords": [
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "homepage": "",
+  "author": "",
+  "devDependencies": {
+      "babel-core": "^6.21.0",
+      "babel-loader": "^6.2.10",
+      "babel-preset-es2015": "^6.18.0",
+      "grunt": "^0.4.5",
+      "grunt-angular-templates": "^1.0.4",
+      "grunt-banner": "~0.6.0",
+      "grunt-concurrent": "^2.3.0",
+      "grunt-contrib-clean": "~1.0.0",
+      "grunt-contrib-compress": "^1.3.0",
+      "grunt-contrib-concat": "~1.0.1",
+      "grunt-contrib-connect": "^1.0.2",
+      "grunt-contrib-copy": "~1.0.0",
+      "grunt-contrib-cssmin": "~1.0.1",
+      "grunt-contrib-jasmine": "1.0.3",
+      "grunt-contrib-jshint": "^1.0.0",
+      "grunt-contrib-less": "~1.3.0",
+      "grunt-contrib-uglify": "~2.0.0",
+      "grunt-contrib-watch": "~1.0.0",
+      "grunt-copy-part-of-file": "^0.1.5",
+      "grunt-execute": "^0.2.2",
+      "grunt-jekyll": "^0.4.4",
+      "grunt-replace": "^1.0.1",
+      "grunt-webfont": "^0.4.8",
+      "grunt-webpack": "^2.0.0-beta.6",
+      "js-yaml": "^3.6.1",
+      "jshint-loader": "^0.8.3",
+      "ng-cache-loader": "0.0.21",
+      "script-loader": "^0.7.0",
+      "webpack": "^2.2.0"
+    }
+}

@@ -1,0 +1,25 @@
+## Getting Started
+
+1. Install [Nodejs](https://nodejs.org/en/)
+
+2.Run  ```npm install``` from the folder where the code will be downloaded (with package.json)
+
+3.Run ```npm install -g grunt-cli
+
+4.Install [bower(>v1.5)](http://bower.io/#install-bower) (or`npm install -g bower')
+
+5.Install [bower-art-resolver](https://www.npmjs.com/package/bower-art-resolver#installation) (or`npm install -g bower-art-resolver`)
+
+6.Run 'bower install` in the seed project folder
+
+7.Run `grunt`
+
+8.Run `grunt connect`
+
+9.Browse "http://localhost:10000/dist/index.html"
+
+10.Every time you change the code, such as adding pages or modifying code, 
+you can regrunt the project in the folder where the project is located.
+
+11.Once again, the project only needs to find the folder where the project is located,
+ and the background input "grunt" -> "grunt connect" can open the page in the browser.
